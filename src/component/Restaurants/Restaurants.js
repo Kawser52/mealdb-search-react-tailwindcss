@@ -10,7 +10,7 @@ const Restaurants = () => {
         fetch (url)
         .then(res => res.json())
         .then(data => setMeals(data.meals))
-    },[])
+    },[searchText])
     const handleToClick=(e)=>{
         const searchText = e.target.value;
         setSearchText(searchText);
