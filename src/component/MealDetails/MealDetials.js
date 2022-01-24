@@ -13,8 +13,10 @@ const MealDetials = () => {
     },[])
 
     return (
-        <div>
+        <div class='p-4 border border-emerald-600 rounded-lg'>
+          <img src={resMeal.strMealThumb} alt="" />
            <h2>{resMeal.strMeal}</h2>
+           <p>{resMeal.strInstructions}</p>
         </div>
     );
 };
